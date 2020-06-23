@@ -1,0 +1,50 @@
+Herramienta que permite desplegar aplicaciones en contenedores de forma rapida y portable
+-capaz de generar aplicaciones "de bolsillo"
+
+
+creando un container:
+
+		puerto: servername: tipo:		
+docker run -d -p:8080 --name web htttpd
+
+eliminar: 
+docker rm -fv web
+
+
+Docker Host:
+
+"casa" o servicio donde se aloja Docker
+
+es donde vive docker daemon - server
+
+REST api
+
+Docker CLI
+ ----->Contenedor, Imagenes, Volumenes, Redes
+ 
+--------
+ Imagen:
+ 	se compone de "n" cantidad de capas
+ 	Ejemplo:
+ 	Se crean en un archivo DockerFile
+ 		**Solo Lectura
+ 		-> Capa 1 : FROM [Ubuntu, Debian, CentOS]  Sistema Operativo 
+ 		-> Capa 2:  RUN  [yum, Npm , Yarn] 
+ 		-> Capa 3:  CMD  [Https, Apache] Lo que levanta el servicio
+--------
+Contenedor:
+
+	//NO SE RECOMIENDA METER MANO A LA CAPA 4
+	Capa Adicional de Ejecucion en Tiempo Real de la Imagen
+	**Se permite Escritura y Lectura, Los Cambios son temporales
+	
+	Almacena: Imagen, Volumenes, Redes--> Comunicar Contenedores entre si
+	
+	Se pueden personalizar los elementos o recursos que puede contener y ejecutar,
+	en vez de usar una maquina virtual que se sirva de todos los recursos.
+	
+--------
+
+
+
+	
