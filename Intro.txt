@@ -50,6 +50,13 @@ Tags: Sirven para versionar la aplicacion
 	
 	
 -------
+Construir imagenes a partir de un Dockerfile
+
+	docker build --tag (nombre del tag aqui) . (el punto le indica a la terminal que debe de tomarlo del dockerfile
+	
+IMPORTANTE: no dejar datos para que el usuario decida, agregar variables como  "-y" para dar a todo que si
+	
+	
 
 
 
