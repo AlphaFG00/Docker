@@ -44,6 +44,13 @@ Contenedor:
 	en vez de usar una maquina virtual que se sirva de todos los recursos.
 	
 --------
+Tags: Sirven para versionar la aplicacion 
+
+	Definicion: docker pull mongo: (pegar el tag aqui)
+	
+	
+-------
+
 
 
 
